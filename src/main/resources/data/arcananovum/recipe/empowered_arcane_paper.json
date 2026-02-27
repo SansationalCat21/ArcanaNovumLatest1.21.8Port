@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "arcananovum:mundane_arcane_paper",
+    "X": "minecraft:ender_eye"
+  },
+  "pattern": [
+    " # ",
+    "#X#",
+    " # "
+  ],
+  "result": {
+    "count": 4,
+    "id": "arcananovum:empowered_arcane_paper"
+  }
+}

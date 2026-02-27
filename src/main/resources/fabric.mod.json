@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "arcananovum",
+  "version": "${version}",
+  "name": "Arcana Novum",
+  "description": "A Server-Side magic mod that adds various Arcana Items to your server!",
+  "authors": [
+    "BorisShoes"
+  ],
+  "contact": {
+    "repo": "https://github.com/borisshoes/ArcanaNovum"
+  },
+  "license": "OSL-3.0",
+  "icon": "assets/arcananovum/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "net.borisshoes.arcananovum.datagen.DataGenerator"
+    ],
+    "main": [
+      "net.borisshoes.arcananovum.ArcanaNovum"
+    ],
+    "client": [
+      "net.borisshoes.arcananovum.ArcanaNovum"
+    ],
+    "cardinal-components-entity": [
+      "net.borisshoes.arcananovum.cardinalcomponents.PlayerComponentInitializer"
+    ],
+    "cardinal-components-world": [
+      "net.borisshoes.arcananovum.cardinalcomponents.WorldDataComponentInitializer"
+    ]
+  },
+  "custom": {
+    "cardinal-components": ["arcananovum:profile","arcananovum:bossfight","arcananovum:active_anchors"]
+  },
+  "mixins": [
+    "arcananovum.mixins.json"
+  ],
+  "accessWidener" : "arcananovum.accesswidener",
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": ">=${minecraft_version}"
+  }
+}
